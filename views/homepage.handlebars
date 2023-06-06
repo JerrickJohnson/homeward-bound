@@ -1,0 +1,42 @@
+<div>
+  <h1 class="littleTitle">Pet Lost & Found</h1>
+  <p>Help me find my way home! </p>
+  <hr class="my-4">
+  <p>Did you recently lose a pet and need help finding it?</p>
+  <p>Just click the button below to report your lost pet so other users can help you find it!</p>
+  <a href="/profile/addPet" class="rollIn btn btn btn-lg reportBtn">Report Lost Pet</a>
+</div>
+<div class="container text-center my-4">
+
+  <form
+    id="input"
+    class="form-inline my-2 my-lg-0 d-flex justify-content-center"
+  >
+    <input
+      id="searchfield"
+      class="form-control mr-sm-2"
+      type="search"
+      placeholder="search by pet's name"
+      aria-label="search"
+    />
+    <button
+      id="searchbutton"
+      class="btn btn-outline-success my-2 my-sm-0"
+      type="submit"
+    >search</button>
+  </form>
+
+<div>
+{{#if pets.length}}
+    <br>
+    <h2>Current List of Lost Pets</h2>
+    {{#each pets as |pet|}}
+    {{> partial-pet}}
+    {{/each}}
+
+{{else}}
+<h2>No missing pets</h2>
+{{/if}}
+</div>
+
+<script src="/js/search.js"></script>

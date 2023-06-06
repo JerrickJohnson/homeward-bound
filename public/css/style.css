@@ -1,0 +1,97 @@
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.pgFormat {
+  background-color: #d6b29cc3;
+  color: #333a4d;
+  font-size: 16pt;
+  font-weight: 1000;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.bigTitle {
+  font-size: 100px;
+  font-family: 'Cherry Bomb One', cursive;
+  color: #333a4d;
+}
+
+.littleTitle {
+  font-size: 50px;
+  font-family: 'Cherry Bomb One', cursive;
+  color: #333a4d;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-nav li {
+  display: inline-block;
+}
+
+/* assorted animation classes */
+.fadeIn {
+  animation: fadeIn;
+  animation-duration: 1.5s;
+}
+
+.fadeInLeft {
+  animation: fadeInLeftBig;
+  animation-duration: 1s;
+}
+
+.fadeInRight {
+  animation: fadeInRightBig;
+  animation-duration: 1s;
+}
+
+.backInDown {
+  animation: backInDown;
+  animation-duration: 1s;
+}
+
+.flipIn {
+  animation: flipInY;
+  animation-duration: 1s;
+}
+
+.lightSpeedRight {
+  animation: lightSpeedInRight;
+  animation-duration: 1s;
+}
+
+.lightSpeedLeft {
+  animation: lightSpeedInLeft;
+  animation-duration: 1s;
+}
+
+
+.rotIn {
+  animation: rotateIn;
+  animation-duration: 1s;
+}
+
+.rotInDown {
+  animation: rotateInDownLeft;
+  animation-duration: 1s;
+}
+
+.rollIn {
+  animation: rollIn;
+  animation-duration: 1s;
+}
+
+.tada {
+  animation: tada;
+  animation-duration: 1.5s;
+}
+
+.rubberBand{
+  animation: rubberBand;
+  animation-duration: 1.5s;
+}

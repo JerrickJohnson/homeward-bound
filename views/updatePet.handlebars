@@ -1,0 +1,130 @@
+<div class="d-flex">
+  <div class="container">
+    <div class="card">
+      <form id="update-pet-form" class="mb-3">
+        {{!-- <div class="mb-3"> --}}
+          <br />
+          <label for="add-pet-name" class="form-label">Pet Name</label>
+          <input
+            class="form-control form-control-lg tada"
+            id="add-pet-name"
+            name="name"
+            type="text"
+            value="{{pet.name}}"
+            placeholder=""
+          />
+          <br />
+          <label for="update-pet-image" class="form-label">Image</label>
+           <img src="{{pet.image}}" alt="Pet Image">
+          <br />
+          <label for="add-pet-type">Type:</label>
+          <select id="add-pet-type" name="type">
+            {{#select pet.type}}
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="bird">Bird</option>
+            <option value="other">Other</option>
+            {{/select}}
+          </select>
+          <br />
+          <label for="add-pet-breed" class="form-label">Breed</label>
+          <input
+            class="form-control rollIn"
+            id="add-pet-breed"
+            name="breed"
+            type="text"
+            value="{{pet.breed}}"
+            placeholder=""
+          />
+          <br />
+          <label for="add-pet-age" class="form-label">Age</label>
+          <input
+            class="form-control lightSpeedLeft"
+            id="add-pet-age"
+            name="age"
+            type="text"
+            value="{{pet.age}}"
+            placeholder=""
+          />
+          <br />
+          <label for="add-pet-date-added" class="form-label">Date Missing</label>
+          <input
+            class="form-control rotIn"
+            id="add-pet-date-added"
+            name="date_added"
+            type="text"
+            value="{{pet.date_added}}"
+            placeholder=""
+          />
+          <br />
+          <label for="add-pet-description" class="form-label">Description</label>
+          <input
+            class="form-control lightSpeedRight"
+            id="add-pet-description"
+            name="description"
+            type="text"
+            value="{{pet.description}}"
+            placeholder=""
+          />
+          <br />
+          <label for="add-last-seenLocation" class="form-label">Last Seen Location</label>
+          <input
+            class="form-control"
+            id="add-last-seenLocation"
+            name="last_seenLocation"
+            type="text"
+            value="{{pet.last_seenLocation}}"
+            placeholder=""
+          />
+          <br />
+          <label for="add-pet-owner-name" class="form-label">Owner Name</label>
+          <input
+            class="form-control flipIn"
+            id="add-pet-owner-name"
+            name="owner_name"
+            type="text"
+            value="{{pet.owner_name}}"
+            placeholder=""
+          />
+          <br />
+          <label for="add-pet-owner-phone" class="form-label">Owner Phone</label>
+          <input
+            class="form-control fadeIn"
+            id="add-pet-owner-phone"
+            name="owner_phone"
+            type="text"
+            value="{{pet.owner_phone}}"
+            placeholder=""
+          />
+          <br />
+          <label for="add-pet-owner-email" class="form-label">Owner Email</label>
+          <input
+            class="form-control fadeInRight"
+            id="add-pet-owner-email"
+            name="owner_email"
+            type="text"
+            value="{{pet.owner_email}}"
+            placeholder=""
+          />
+          <br />
+          <label for="add-pet-reward" class="form-label">Reward</label>
+          <input
+            class="form-control fadeInLeft"
+            id="add-pet-reward"
+            name="reward"
+            type="text"
+            value="{{pet.reward}}"
+            placeholder=""
+          />
+        {{!-- </div> --}}
+      </form>
+      <div class="row justify-center m-3" style="width: 100%">
+        <button class="btn btn-primary mx-1" id="update-pet-btn" style="padding: .75rem; margin-right: 10px;" type="submit">Update</button>
+        <button class="btn btn-primary mx-1" id="delete-pet" style="padding: .75rem;" type="submit">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/edit-pet.js"></script>
+<script src="/js/delete.js"></script>
